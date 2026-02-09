@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Emanuel Dev: Voxel Protocol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <div id="hud">
+        <div class="stat">SISTEMA: <span id="hp">100</span>%</div>
+        <div class="stat">SCORE: <span id="score">0</span></div>
+        <div class="stat">BEST: <span id="high">0</span></div>
+    </div>
+
+    <div id="start-screen" class="overlay">
+        <div class="premium-box">
+            <h2 class="dev-tag">
+                <span class="nome-destaque">EMANUEL</span> DEV
+            </h2>
+            <h1 class="gold-title">VOXEL PROTOCOL</h1>
+        </div>
+        <p class="instruction">WASD para mover • Clique para disparar</p>
+        <button class="gold-btn" onclick="startGame()">INICIAR OPERAÇÃO</button>
+    </div>
+
+    <div id="game-over" class="overlay hidden">
+        <h1 class="red">CONEXÃO PERDIDA</h1>
+        <p id="final-stats"></p>
+        <button class="gold-btn" onclick="startGame()">RECONECTAR</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
